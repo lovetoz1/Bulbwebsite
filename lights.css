@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.font_h1{
+    font-size: 4rem;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -.015em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.font_h2{
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    
+}
+
+
+.font_body{
+    
+    font-size: 28px;
+    line-height: 1.4211;
+    font-weight: 600;
+    letter-spacing: .012em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.normallight{
+animation: blinklight 0.5s infinite ;
+
+}
+@keyframes blinklight{
+    0%{
+        filter: drop-shadow(0px 0 6px white) drop-shadow(20px 0px 10px #fff) ;
+
+    }
+    20%{
+
+    }
+    40%{
+    /* filter: drop-shadow(0px 0 12px white) drop-shadow(20px 0px 24px #fff) drop-shadow(10px 0px 24px #fff)  drop-shadow(10px 10px 24px #fff); */
+    filter: drop-shadow(0px 0 6px white) drop-shadow(20px 0px 10px #fff) ;
+
+    }
+60%{
+    filter:contrast();
+}
+80%{
+    /* filter: drop-shadow(0px 0 12px white) drop-shadow(20px 0px 24px #fff) drop-shadow(10px 0px 24px #fff)  drop-shadow(10px 10px 24px #fff); */
+    filter: drop-shadow(0px 0 6px white) drop-shadow(20px 0px 10px #fff) ;
+
+}
+
+100%{
+    /* filter: drop-shadow(0px 0 0px white) drop-shadow(20px 0px 0px #fff) drop-shadow(10px 0px 0px #fff)  drop-shadow(10px 10px 0px #fff); */
+    filter: drop-shadow(0px 0 6px white) drop-shadow(20px 0px 10px #fff) ;
+
+}
+}
+
+.ourlight{
+
+}
+
+
+.normallightcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+}
+
+.compare{
+display: flex;
+height: 100vh;
+align-items: center;
+justify-content: space-between;
+background: linear-gradient(90deg, #201d1d, transparent);
+
+}
+
+@media (max-width:600px){
+  .font_h2{
+    font-size: 18px;
+    line-height: 1.4211;
+    font-weight: 600;
+    letter-spacing: .012em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+  }
+  .ourlight{
+    position: absolute;
+    right: 40px;
+  }
+}
+
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration:none;
+}
+
+
+.cardupper{
+    padding: 30px;
+    border-radius: 20px;
+    /* height: 340px; */
+    width: 80%;
+    color: #C48CFC;
+    background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);
+    z-index: 2;
+    position: relative;
+    top: 0px;
+    }
+    .headcard{
+        position:relative;
+        z-index: 3;
+    }
+    
+    .carddown{
+        /* position: absolute; */
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        justify-content: center;
+        position: relative;
+        bottom: 100px;
+        border-radius: 20px;
+        height: 100px;
+        width: 80%;
+        background-color: white;
+        
+        z-index: 0;
+    transition: 1s;
+    }
+    .cardupper:hover ~ .carddown{
+        bottom: 50px;
+    }
+
+    .maincontent{
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        /* filter: grayscale(0.2); */
+        filter: grayscale(0.6);
+        background: url(images/tubelightmain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    }

@@ -1,0 +1,28 @@
+.cardupper{
+border-radius: 20px;
+height: 100px;
+width: 100px;
+color: black;
+background-color: black;
+z-index: 2;
+position: absolute;
+top: 0px;
+}
+.headcard{
+    position:relative;
+}
+
+.carddown{
+    position: absolute;
+    top: 0px;
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    
+    z-index: 0;
+transition: 2s;
+}
+.headcard:hover > .carddown{
+    top: 400px;
+}
